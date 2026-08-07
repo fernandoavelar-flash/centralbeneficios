@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Novidades do Flash Benefícios — Central de Benefícios</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,800&display=swap" rel="stylesheet">
+<script src="https://fast.wistia.com/player.js" async></script>
+<script src="https://fast.wistia.com/embed/shpv8l3e1y.js" async type="module"></script>
+<script src="https://fast.wistia.com/embed/sp1qpvj2hd.js" async type="module"></script>
+<style>
+  :root{
+    --pink:#FE2B8F; --pink-strong:#F20D7A; --pink-deep:#C8195A; --pink-darkest:#78003C;
+    --pink-050:#FFE0EF; --pink-100:#F4E6E9; --pink-150:#EFE0E5;
+    --ink:#1D161B; --muted:#6B5B66; --faint:#B9ACB4; --line:#EBE6E9;
+    --teal:#117965; --teal-bg:#D7F9F3;
+    --head:'Cabinet Grotesk','Nunito Sans',system-ui,sans-serif;
+    --body:'Nunito Sans',system-ui,-apple-system,BlinkMacSystemFont,sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:#fff;color:var(--ink);font-family:var(--body);-webkit-font-smoothing:antialiased;line-height:1.5}
+  .wrap{width:min(1080px,100%);margin:0 auto;padding-inline:clamp(20px,5vw,32px)}
+  @keyframes cbFade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+  header.site{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1.5px solid var(--line)}
+  header.site .wrap{display:flex;align-items:center;gap:14px;padding-block:14px}
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}
+  .brand-logo{height:22px;width:auto;display:block}
+  .brand span{font-family:var(--head);font-weight:700;font-size:17px;letter-spacing:-.01em}
+  header.site .tagchip{margin-left:auto}
+
+  article{padding-block:clamp(28px,5vw,56px) 64px;animation:cbFade 320ms cubic-bezier(.2,0,0,1) both}
+  .meta{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+  .pill{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:7px 13px;border-radius:500px}
+  .pill--colab{color:var(--teal);background:var(--teal-bg)}
+  .meta .dot{color:var(--faint);font-weight:600}
+  .meta .when{font-size:14px;font-weight:600;color:var(--muted)}
+  h1{font-family:var(--head);font-weight:700;font-size:clamp(32px,4.8vw,58px);line-height:1.05;letter-spacing:-.03em;max-width:20ch;text-wrap:pretty}
+  h1 .accent{color:var(--pink)}
+  .lead{font-size:clamp(17px,2vw,21px);line-height:1.55;color:var(--muted);margin-top:20px;max-width:60ch;text-wrap:pretty}
+
+  /* segmented toggle */
+  .seg{display:inline-flex;gap:4px;margin-top:clamp(28px,4vw,40px);padding:5px;background:var(--pink-100);border-radius:14px}
+  .seg-btn{display:inline-flex;align-items:center;gap:8px;border:none;background:none;cursor:pointer;font-family:var(--body);font-size:14px;font-weight:700;color:var(--muted);padding:9px 16px;border-radius:10px;transition:all 140ms}
+  .seg-btn svg{width:18px;height:18px}
+  .seg-btn:hover{color:var(--pink-deep)}
+  .seg-btn.is-active{background:#fff;color:var(--pink-deep);box-shadow:0 1px 4px rgba(29,22,27,.12)}
+
+  .panel{display:none;margin-top:20px}
+  .panel.is-active{display:block;animation:cbFade 260ms cubic-bezier(.2,0,0,1) both}
+
+  .frame{border-radius:20px;overflow:hidden;border:1.5px solid var(--line);box-shadow:0 4px 28px rgba(29,22,27,.10);background:#0A0A0A}
+  .frame--wide{width:100%}
+  .frame--vertical{width:min(340px,100%);margin-inline:auto}
+  .frame wistia-player{width:100%}
+  wistia-player[media-id='shpv8l3e1y']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/shpv8l3e1y/swatch'); display: block; filter: blur(5px); padding-top:56.25%; }
+  wistia-player[media-id='sp1qpvj2hd']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/sp1qpvj2hd/swatch'); display: block; filter: blur(5px); padding-top:177.78%; }
+  .video-note{font-size:13px;font-weight:600;color:var(--muted);margin:12px 2px 0;text-align:center}
+  .panel--desktop .video-note{text-align:left}
+
+  /* feedback */
+  .feedback{margin-top:16px;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+  .feedback .q{font-size:14px;font-weight:600;color:var(--muted);margin-right:6px}
+  .fb{width:38px;height:38px;display:inline-flex;align-items:center;justify-content:center;border:none;border-radius:50%;cursor:pointer;background:#F7F3F5;color:var(--muted);transition:all 120ms}
+  .fb svg{width:20px;height:20px}
+  .fb:hover{background:var(--pink-100)}
+  .fb.is-on{background:var(--pink-050);color:var(--pink-deep)}
+  .thanks{font-size:13px;font-weight:600;color:var(--teal);margin-left:6px;opacity:0;transition:opacity 160ms}
+  .thanks.show{opacity:1}
+
+  /* cards */
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:clamp(36px,5vw,56px)}
+  .card{border:1.5px solid var(--line);border-radius:16px;padding:24px}
+  .card .ico{color:var(--pink)}
+  .card .ico svg{width:26px;height:26px}
+  .card h3{font-family:var(--head);font-size:19px;font-weight:700;letter-spacing:-.01em;margin:14px 0 8px}
+  .card p{font-size:15px;line-height:1.5;color:var(--muted)}
+
+  /* steps */
+  .section-h{font-family:var(--head);font-weight:700;font-size:clamp(24px,3vw,32px);letter-spacing:-.02em;margin:clamp(48px,7vw,72px) 0 24px}
+  ol.steps{list-style:none;display:grid;gap:14px}
+  ol.steps li{display:flex;gap:16px;align-items:flex-start;border:1.5px solid var(--line);border-radius:16px;padding:20px 22px}
+  ol.steps .num{flex:none;width:34px;height:34px;border-radius:50%;background:var(--pink-050);color:var(--pink-deep);font-family:var(--head);font-weight:700;font-size:16px;display:flex;align-items:center;justify-content:center}
+  ol.steps h3{font-family:var(--head);font-size:18px;font-weight:700;letter-spacing:-.01em;margin-bottom:4px}
+  ol.steps p{font-size:15px;line-height:1.5;color:var(--muted)}
+
+  /* faq */
+  .faq{display:grid;gap:12px}
+  details.qa{border:1.5px solid var(--line);border-radius:16px;overflow:hidden}
+  details.qa summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:12px;padding:18px 22px;font-family:var(--head);font-weight:700;font-size:17px;letter-spacing:-.01em}
+  details.qa summary::-webkit-details-marker{display:none}
+  details.qa summary .chev{margin-left:auto;color:var(--pink);transition:transform 200ms}
+  details.qa summary .chev svg{width:22px;height:22px;display:block}
+  details.qa[open] summary .chev{transform:rotate(180deg)}
+  details.qa .ans{padding:0 22px 20px;font-size:15px;line-height:1.55;color:var(--muted)}
+
+  footer.site{border-top:1.5px solid var(--line);padding-block:28px;margin-top:24px}
+  footer.site .wrap{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:13px;font-weight:600;color:var(--faint)}
+</style>
+</head>
+<body>
+  <header class="site">
+    <div class="wrap">
+      <a class="brand" href="#top" aria-label="Flash — Novidades">
+        <svg class="brand-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 799.221 282.667" fill="#FE2B8F">
+  <path d="M 621.67 258.949 C 621.67 264.516 623.889 269.854 627.839 273.79 C 631.79 277.726 637.147 279.937 642.734 279.937 C 648.32 279.937 653.678 277.726 657.628 273.79 C 661.578 269.854 663.797 264.516 663.797 258.949 L 663.797 171.867 C 663.797 136.873 683.708 117.81 714.159 117.81 C 741.465 117.81 757.064 134.159 757.064 162.917 L 757.064 258.949 C 757.064 264.52 759.285 269.862 763.238 273.8 C 767.191 277.739 772.552 279.952 778.143 279.952 C 783.733 279.952 789.095 277.739 793.048 273.8 C 797.001 269.862 799.221 264.52 799.221 258.949 L 799.221 158.651 C 799.221 110.919 771.137 78.938 724.368 78.938 C 697.811 78.938 679.876 88.276 668.558 103.818 C 666.612 106.533 663.857 105.758 663.857 102.267 L 663.857 21.39 C 663.857 15.824 661.638 10.486 657.688 6.55 C 653.738 2.614 648.38 0.403 642.794 0.403 C 637.207 0.403 631.849 2.614 627.899 6.55 C 623.949 10.486 621.73 15.824 621.73 21.39 L 621.67 258.949 Z M 447.232 138.425 C 447.232 168.765 468.191 185.083 494.839 192.87 L 529.96 202.864 C 545.17 207.13 552.985 212.172 552.985 222.673 C 552.985 237.082 540.499 244.451 518.253 244.451 C 511.615 244.583 505.024 243.323 498.906 240.753 C 492.789 238.184 487.282 234.361 482.743 229.534 C 479.065 225.771 474.122 223.492 468.863 223.134 C 463.603 222.776 458.396 224.365 454.239 227.595 C 452.01 229.292 450.165 231.438 448.823 233.893 C 447.482 236.348 446.675 239.057 446.455 241.843 C 446.235 244.629 446.606 247.431 447.545 250.065 C 448.483 252.699 449.968 255.106 451.903 257.13 C 467.503 274.463 493.252 282.667 518.253 282.667 C 555.709 282.667 594.334 264.767 594.334 220.853 C 594.334 189.737 574.453 174.582 544.002 165.632 L 508.881 155.519 C 493.282 150.865 488.581 145.435 488.581 136.485 C 488.581 124.552 500.288 117.034 518.522 117.034 C 533.733 117.034 545.05 123.001 555.2 130.25 C 565.35 137.5 578.225 136.485 584.453 127.923 C 586.138 125.87 587.398 123.504 588.16 120.962 C 588.922 118.421 589.171 115.754 588.893 113.116 C 588.614 110.478 587.814 107.921 586.538 105.593 C 585.262 103.265 583.536 101.212 581.459 99.552 C 566.488 86.724 546.338 78.938 518.253 78.938 C 480.377 78.938 447.232 100.328 447.232 138.425 Z M 255.608 180.817 C 255.608 143.854 280.579 117.81 316.868 117.81 C 353.157 117.81 378.158 144.242 378.158 180.817 C 378.158 217.392 353.187 243.794 316.868 243.794 C 280.549 243.794 255.608 217.362 255.608 180.817 Z M 212.673 180.817 C 212.673 238.365 254.83 282.667 309.862 282.667 C 339.803 282.667 359.804 271.39 373.068 253.52 C 375.403 250.537 377.769 251.581 377.769 255.071 L 377.769 258.949 C 377.769 264.516 379.988 269.854 383.938 273.79 C 387.888 277.726 393.246 279.937 398.832 279.937 C 404.419 279.937 409.776 277.726 413.727 273.79 C 417.677 269.854 419.896 264.516 419.896 258.949 L 419.896 102.655 C 419.896 97.089 417.677 91.751 413.727 87.815 C 409.776 83.879 404.419 81.668 398.832 81.668 C 393.246 81.668 387.888 83.879 383.938 87.815 C 379.988 91.751 377.769 97.089 377.769 102.655 L 377.769 105.638 C 377.769 109.129 375.403 110.322 373.068 107.19 C 359.804 89.708 339.893 78.819 310.191 78.819 C 255.548 78.819 212.613 123.926 212.613 180.698 L 212.673 180.817 Z M 143.209 258.949 C 143.209 264.52 145.43 269.862 149.383 273.8 C 153.336 277.739 158.697 279.952 164.288 279.952 C 169.878 279.952 175.239 277.739 179.192 273.8 C 183.145 269.862 185.366 264.52 185.366 258.949 L 185.366 21.39 C 185.366 15.82 183.145 10.478 179.192 6.539 C 175.239 2.601 169.878 0.388 164.288 0.388 C 158.697 0.388 153.336 2.601 149.383 6.539 C 145.43 10.478 143.209 15.82 143.209 21.39 L 143.209 258.949 Z M 49.942 280.429 C 52.751 280.476 55.539 279.951 58.137 278.886 C 60.735 277.821 63.087 276.239 65.05 274.236 C 67.012 272.234 68.543 269.853 69.549 267.239 C 70.556 264.626 71.015 261.836 70.901 259.039 L 70.901 127.148 C 70.87 126.628 70.95 126.107 71.137 125.621 C 71.324 125.134 71.612 124.693 71.983 124.326 C 72.354 123.959 72.799 123.675 73.289 123.493 C 73.779 123.311 74.302 123.235 74.823 123.27 L 98.237 123.27 C 103.518 123.27 108.582 121.179 112.316 117.459 C 116.05 113.738 118.148 108.692 118.148 103.431 C 118.148 98.169 116.05 93.123 112.316 89.402 C 108.582 85.682 103.518 83.592 98.237 83.592 L 74.943 83.592 C 74.426 83.618 73.91 83.535 73.427 83.349 C 72.945 83.163 72.507 82.878 72.143 82.512 C 71.778 82.146 71.496 81.707 71.312 81.225 C 71.129 80.743 71.05 80.228 71.08 79.713 L 71.08 69.988 C 71.08 52.088 80.841 41.617 98.417 40.155 C 112.459 38.992 120.244 31.623 120.244 19.57 C 120.184 8.562 113.178 0 97.549 0 C 57.757 0 28.893 30.34 28.893 71.151 L 28.893 79.713 C 28.911 80.227 28.821 80.739 28.628 81.216 C 28.436 81.693 28.146 82.125 27.777 82.485 C 27.408 82.844 26.968 83.123 26.485 83.303 C 26.002 83.483 25.486 83.561 24.971 83.532 L 19.911 83.532 C 17.296 83.532 14.707 84.045 12.291 85.042 C 9.876 86.039 7.681 87.501 5.832 89.343 C 3.983 91.185 2.516 93.372 1.516 95.779 C 0.515 98.186 0 100.766 0 103.371 C 0 105.976 0.515 108.556 1.516 110.963 C 2.516 113.37 3.983 115.557 5.832 117.399 C 7.681 119.241 9.876 120.703 12.291 121.7 C 14.707 122.697 17.296 123.21 19.911 123.21 L 24.971 123.21 C 25.491 123.18 26.012 123.259 26.5 123.443 C 26.987 123.627 27.43 123.911 27.8 124.277 C 28.17 124.643 28.459 125.082 28.647 125.567 C 28.836 126.051 28.919 126.569 28.893 127.088 L 28.893 258.949 C 28.774 261.747 29.231 264.54 30.236 267.155 C 31.24 269.77 32.771 272.153 34.735 274.156 C 36.698 276.16 39.052 277.742 41.652 278.806 C 44.252 279.869 47.042 280.391 49.852 280.34" fill="currentColor" fill-rule="nonzero"></path>
+</svg>
+        <span>Novidades</span>
+      </a>
+      <span class="pill pill--colab tagchip">Para o colaborador</span>
+    </div>
+  </header>
+
+  <main id="top">
+    <article class="wrap">
+      <div class="meta">
+        <span class="pill pill--colab">Para o colaborador</span>
+        <span class="when">7 de agosto de 2026</span>
+        <span class="dot">·</span>
+        <span class="when">vídeo de 30 segundos</span>
+      </div>
+
+      <h1>Os seus benefícios <span class="accent">em um só lugar</span></h1>
+      <p class="lead">A Central de Benefícios reúne tudo que a sua empresa te oferece dentro do app Flash. Em 30 segundos, veja onde encontrar e o que dá para consultar.</p>
+
+      <div class="seg" role="tablist" aria-label="Escolha o formato do vídeo">
+        <button class="seg-btn is-active" role="tab" aria-selected="true" data-target="panel-desktop"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M7 20h10M9 16v4M15 16v4"/></svg>Computador</button>
+        <button class="seg-btn" role="tab" aria-selected="false" data-target="panel-mobile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="3" width="10" height="18" rx="2"/><path d="M11 18h2"/></svg>Celular</button>
+      </div>
+
+      <section id="panel-desktop" class="panel panel--desktop is-active" role="tabpanel">
+        <div class="frame frame--wide">
+          <wistia-player media-id="shpv8l3e1y" aspect="1.7777777777777777"></wistia-player>
+        </div>
+        <p class="video-note">Versão para tela grande — ideal para telão e apresentações.</p>
+      </section>
+
+      <section id="panel-mobile" class="panel panel--mobile" role="tabpanel">
+        <div class="frame frame--vertical">
+          <wistia-player media-id="sp1qpvj2hd" aspect="0.5625"></wistia-player>
+        </div>
+        <p class="video-note">Versão vertical, feita para a tela do celular.</p>
+      </section>
+
+      <div class="feedback">
+        <span class="q">Gostou dessa novidade?</span>
+        <button class="fb" data-fb="up" aria-label="Gostei" title="Gostei"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 11v9H4a1 1 0 0 1-1-1v-7a1 1 0 0 1 1-1h3zm0 0 4.5-8a2.2 2.2 0 0 1 2 3l-1 4H19a2 2 0 0 1 2 2.3l-1 5A2 2 0 0 1 18 20H7"/></svg></button>
+        <button class="fb" data-fb="down" aria-label="Não curti" title="Não curti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 13V4H4a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h3zm0 0 4.5 8a2.2 2.2 0 0 0 2-3l-1-4H19a2 2 0 0 0 2-2.3l-1-5A2 2 0 0 0 18 4H7"/></svg></button>
+        <span class="thanks">Valeu pelo retorno.</span>
+      </div>
+
+      <div class="cards">
+        <div class="card"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></svg></span><h3>Tudo reunido</h3><p>Plano de saúde, odonto, bem-estar e o que mais a sua empresa oferecer, na mesma tela.</p></div>
+        <div class="card"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg></span><h3>Detalhes na hora</h3><p>Vigência, cobertura e o que fazer em cada situação, sem precisar perguntar pra ninguém.</p></div>
+        <div class="card"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="3" width="10" height="18" rx="2"/><path d="M11 18h2"/></svg></span><h3>Nenhum app novo</h3><p>Está no app Flash que você já usa, dentro de Meus acessos.</p></div>
+      </div>
+
+      <h2 class="section-h">Como acessar</h2>
+      <ol class="steps">
+        <li><span class="num">1</span><div><h3>Abra o app Flash</h3><p>O mesmo app do cartão e do ponto. Nada muda no seu login.</p></div></li>
+        <li><span class="num">2</span><div><h3>Vá até Meus acessos</h3><p>Fica logo abaixo do saldo, na tela inicial do app.</p></div></li>
+        <li><span class="num">3</span><div><h3>Toque em Central de Benefícios</h3><p>Pronto: seus benefícios aparecem reunidos, com os detalhes de cada plano.</p></div></li>
+      </ol>
+
+      <h2 class="section-h">Perguntas frequentes</h2>
+      <div class="faq">
+        <details class="qa"><summary>Não estou vendo a Central no meu app.<span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="ans">A Central aparece quando a sua empresa ativa o recurso. Se não estiver lá, fale com o seu RH.</div></details>
+        <details class="qa"><summary>Os dados do meu plano estão errados.<span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="ans">Quem cadastra as informações é a sua empresa. Avise o RH e a correção aparece no app.</div></details>
+        <details class="qa"><summary>Consigo usar a Central pelo computador?<span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="ans">Por enquanto a Central vive no app. É lá que ela fica sempre com você.</div></details>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site"><div class="wrap"><span>Flash Benefícios · Central de Benefícios</span></div></footer>
+
+<script>
+(function(){
+  var btns=document.querySelectorAll('.seg-btn');
+  var panels=document.querySelectorAll('.panel');
+  var MOBILE_QUERY='(max-width: 680px)';
+  var userPicked=false; // vira true assim que a pessoa clicar manualmente
+
+  function activatePanel(target){
+    btns.forEach(function(b){
+      var match=b.dataset.target===target;
+      b.classList.toggle('is-active',match);
+      b.setAttribute('aria-selected',match?'true':'false');
+    });
+    panels.forEach(function(p){
+      p.classList.toggle('is-active',p.id===target);
+    });
+  }
+
+  // clique manual sempre tem prioridade sobre a detecção automática
+  btns.forEach(function(b){
+    b.addEventListener('click',function(){
+      userPicked=true;
+      activatePanel(b.dataset.target);
+    });
+  });
+
+  // deteccao automatica por largura de tela: computador ou celular
+  var mql=window.matchMedia(MOBILE_QUERY);
+  function autoDetect(e){
+    if(userPicked) return;
+    activatePanel(e.matches?'panel-mobile':'panel-desktop');
+  }
+  autoDetect(mql);
+  if(mql.addEventListener){
+    mql.addEventListener('change',autoDetect);
+  } else if(mql.addListener){
+    mql.addListener(autoDetect); // fallback Safari antigo
+  }
+
+  // feedback thumbs
+  var thanks=document.querySelector('.thanks');
+  document.querySelectorAll('.fb').forEach(function(fb){
+    fb.addEventListener('click',function(){
+      document.querySelectorAll('.fb').forEach(function(x){x.classList.remove('is-on');});
+      fb.classList.add('is-on');
+      if(thanks) thanks.classList.add('show');
+    });
+  });
+})();
+</script>
+</body>
+</html>
